@@ -1,0 +1,75 @@
+body{
+    font-family: 'Cairo', sans-serif;
+    background: #f4f4f4;
+    margin:0;
+}
+
+.clr{
+    clear:both;
+}
+
+#main-header{
+    background: #204F7A;
+    background-image: url('images/Pattern.png');
+    background-repeat:repeat-y;
+    color: #BD9B12;
+    padding: 20px;
+    display: flex;
+}
+
+#logo{
+    display: flex;
+}
+
+#main-header h1{
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 2px 0px white, 0px 2px white, -2px 0px white, 0 -2px white, 0 6px 5px rgba(0, 0, 0, .5);
+    margin:auto;
+}
+
+#main-header img{
+    margin-right: 30px;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, .5);
+}
+
+
+#account{
+    display: flex;
+}
+
+#account p{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#account img{
+    box-shadow: 0 0 0 white;
+    margin: 0 10px;
+}
+
+#navbar ul{
+    text-align: center;
+    background:#BD9B12;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li{
+    display: inline;
+    list-style: none;
+    padding: 0 5px;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+
+#navbar a:hover{
+    background:#204F7A;
+    box-shadow: 0 0 10px cadetblue;
+}
