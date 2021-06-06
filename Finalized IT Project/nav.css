@@ -1,0 +1,66 @@
+nav {
+    background: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Space between the dropdown arrow and the text */
+nav i{
+    padding-left: 10px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    padding: 20px 50px;
+}
+
+nav ul li, nav ul a{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+}
+
+nav ul li:hover, nav ul li:hover a{
+    background: white;
+    color: black;
+}
+
+/* Dropdown Menus */
+nav ul li ul{
+    visibility: hidden;
+    position:absolute;
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background: black;    
+}
+
+nav ul .navbtn li a{
+    background: black;
+    color: white;
+}
+
+nav ul .navbtn:hover ul{
+    visibility: visible;
+    background: black;
+}
+
+nav ul li ul li:hover a{
+    background: white;
+    color: black;
+}
