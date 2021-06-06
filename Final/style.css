@@ -1,0 +1,336 @@
+*{
+   margin:0;
+   padding:0;
+}
+
+
+body{
+    font-family: 'Cairo', sans-serif;
+    background: #f4f4f4;
+    margin:0;
+    background-color: seashell;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+}
+
+.clr{
+    clear:both;
+}
+
+#main-header{
+    background: #204F7A;
+    background-image: url('images/Pattern.png');
+    background-size:100%;
+    background-repeat:repeat-y;
+    color: #BD9B12;
+    padding: 20px;
+    display: flex;
+    
+}
+
+#logo{
+    display: flex;
+}
+
+#main-header h1{
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 2px 0px white, 0px 2px white, -2px 0px white, 0 -2px white, 2px 2px 0 white, -2px -2px 0 white, 2px -2px white, -2px 2px white, 0 6px 6px rgb(0 0 0 / 50%);
+    margin:auto;
+}
+
+#main-header img{
+    box-shadow: 0 8px 5px rgba(0, 0, 0, .5);
+    transition: transform 200ms ease;
+    margin: 0;
+}
+
+
+#main-header .tooltip img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#account{
+    display: flex;
+}
+
+#account p{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#account img{
+    box-shadow: 0 0 0 white;
+    margin: 0 10px;
+}
+
+#account-logo{
+    margin-left: 30px;
+}
+
+
+
+
+
+/* Navigation Bar */
+nav {
+    z-index: 1;
+    margin-bottom: 50px;
+    background: #BD9B12;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+/* Space between the dropdown arrow and the text */
+nav i{
+    padding-left: 10px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    padding: 12px 50px;
+}
+
+nav a{
+    transition: background 100ms;
+}
+
+nav ul li, nav ul a{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    transition: background 100ms;
+}
+
+nav ul li:hover{
+    background: white;
+    color: #BD9B12;
+}
+
+nav ul li:hover a{
+    color: #BD9B12;
+}
+
+/* Dropdown Menus */
+nav ul li ul{
+    visibility: hidden;
+    position:absolute;
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background: #BD9B12;    
+    z-index: 1;
+}
+
+nav ul .navbtn li a{
+    color: white;
+}
+
+nav ul .navbtn:hover ul{
+    visibility: visible;
+    background: #BD9B12;
+}
+
+nav ul li ul li:hover a{
+    color: #BD9B12;
+}
+
+
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext{
+    position: absolute;
+    font-size: 14px;
+    z-index: 1;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: -100px;
+    margin-top: 105px;
+    background: black;
+    color:white;
+    opacity: 0;
+    transition: opacity 200ms;
+    line-height: 1.5;
+}
+
+.tooltip:hover .tooltiptext{
+    opacity: .7;
+}
+
+#footer{
+    background-image: url(images/background-footer.jpg);
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-top: 60px;
+    background-size: 2000px;
+    background-position:center;
+    display: flex;
+    color: white;
+}
+#footer-logo{
+    margin-right: 100px;    
+}
+
+.contact-method li{
+    margin-bottom: 20px;
+}
+
+.contact-method p{
+    line-height: 20px;
+}
+
+#related-links, #related-links a, #related-links ul{
+    margin-left: 10%;
+    color: white;
+    text-decoration: none;
+}
+
+/* Registeration */
+#form-header{
+    text-align: center;
+    margin-bottom:30px;
+    font-size: 30px;
+}
+
+#register-body{
+    background: url(images/register.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: white;
+
+}
+
+#registration-form{
+    background: #204e7a8e;
+    font-size: 15px;
+    width: 50%;
+    padding: 25px;
+    margin: 10px auto;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, .6);
+}
+
+#form-container input[type=text], input[type=email], input[type=password]{
+    margin-bottom:4px;
+    width: 100%;
+}
+
+#registration-form button{
+    margin: 10px 0px;
+    display: block;
+    background: #204F7A;
+    border: 0px;
+    padding: 10px 20px;
+    color: white;
+}
+
+* {box-sizing: border-box}
+
+.mySlides {display: none}
+
+.slideshow-container {
+    float: left;
+    width:50%;
+    position: relative;
+    margin-right: 30px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+  table, tr, th,td{
+     border: 1px black solid;
+     border-collapse: collapse;
+     padding: 5px;
+     text-align:center;
+     margin: 30px 0px;
+  }
+
+  .float{
+      float: left;
+      margin: 20px;
+  }
+  
