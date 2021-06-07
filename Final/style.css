@@ -192,7 +192,6 @@ nav ul li ul li:hover a{
 
 #footer{
     background-image: url(images/background-footer.jpg);
-    margin-top: 50px;
     padding-left: 100px;
     padding-top: 60px;
     background-size: 2000px;
@@ -334,3 +333,37 @@ nav ul li ul li:hover a{
       margin: 20px;
   }
   
+
+#deans-message{
+    margin: 50px 0px;
+    margin-bottom: 0;
+    background: url(images/Pattern.png);
+    background-size: 200%;
+    color: white;
+    padding: 50px;
+    padding-top: 0;
+}
+
+#deans-message img{
+    float: right;
+    border: white 3px solid;
+    margin: 10px 0 5px 30px;
+    box-shadow: rgba(216, 172, 78, 0.541) 0 10px 10px;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+#deans-message img:hover{
+    transform: rotate(-3deg) scale(1.07);
+    box-shadow: rgba(216, 172, 78, 0.541) 0 20px 20px;
+}
+
+#deans-message h1{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#deans-message #dean{
+    font-weight: 200;
+}
